@@ -23,7 +23,7 @@
                 <a href="" class="text-nowrap logo-img text-center d-block py-3 w-100">
                   <img src="{{ ('assets') }}/images/logos/POLINDRA.png" width="180" alt="">
                 </a>
-                <p class="text-center">Sistem Peminjaman Barang <br> SISLAB POLINDRA</p>
+                <h1 class="text-center">SI-BIMKOKO</h1>
                 <form method="post" action="{{ url('/register') }}" >
                     @csrf
                   <div class="mb-3">
@@ -38,11 +38,11 @@
                     <label for="password" class="form-label">Password</label>
                     <input type="password" class="form-control" id="password" name="password" aria-describedby="passwordHelp">
                   </div>
-                  <button type="submit" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Register</button>
+                  <button type="submit" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Sign Up</button>
                 </form>
                 <div class="d-flex align-items-center justify-content-center">
                     <p class="fs-4 mb-0 fw-bold">Already have an Account?</p>
-                    <a class="text-primary fw-bold ms-2" href="{{ url('/login') }}">Log In</a>
+                    <a class="text-primary fw-bold ms-2" href="{{ url('/login') }}">Sign In</a>
                   </div>
               </div>
             </div>

@@ -3,25 +3,25 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use App\Models\Product;
+use App\Models\Post;
 use App\Models\Peminjaman;
 use Illuminate\Http\Request;
 
 class AppController extends Controller
 {
-    public function SuperAdmin() {
-        return view('Superadmin.pages.dashboard');
-    }
     public function Admin() {
         return view('Admin.pages.dashboard');
     }
-    public function Mahasiswa() {
+    public function Konselor() {
+        return view('Konselor.pages.dashboard');
+    }
+    public function Konseli() {
 
         $userCount = User::count();
-        $productCount = Product::count();
+        // $postCount = Post::count();
         // $peminjamanCount = Peminjaman::count();
 
-        return view('Mahasiswa.pages.dashboard', ['user_count' => $userCount, 'product_count' => $productCount,]);
+        return view('Konseli.pages.dashboard', ['user_count' => $userCount]);
 
     }
 }

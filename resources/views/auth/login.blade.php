@@ -23,7 +23,7 @@
                 <a href="" class="text-nowrap logo-img text-center d-block py-3 w-100">
                   <img src="{{ ('assets') }}/images/logos/POLINDRA.png" width="180" alt="">
                 </a>
-                <p class="text-center">Sistem Peminjaman Barang <br> SISLAB POLINDRA</p>
+                    <h1 class="text-center">SI-BIMKOKO</h1>
                 <form method="post" action="{{ route('process') }}">
                     @csrf
                   <div class="mb-3">
@@ -43,10 +43,10 @@
                     </div>
                     <a class="text-primary fw-bold" href="">Forgot Password?</a>
                   </div>
-                  <button type="submit" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Log In</button>
-                  <div class="d-flex align-items-center justify-content-center">
-                    <p class="fs-4 mb-0 fw-bold">New to SISLAB?</p>
-                    <a class="text-primary fw-bold ms-2" href="{{ url('/register') }}">Create an account</a>
+                  <button type="submit" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Sign In</button>
+                  <div class="d-flex align-items-center justify-content-between mb-4">
+                    <p class="fs-4 mb-0 fw-bold">New to <br>SI-BIMKOKO?</p>
+                    <a class="text-primary fw-bold ms-2" href="{{ url('/register') }}">Create<br>an account</a>
                   </div>
                 </form>
               </div>

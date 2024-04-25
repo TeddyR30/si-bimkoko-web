@@ -3,7 +3,7 @@
 <div class="container-fluid">
     <div class="container-fluid lg-4">
       <div class="card">
-        <h1 style="padding: 10px; text-align: center; background-color: silver; border-radius: 4px">Manajemen Peminjaman</h1>
+        <h1 style="padding: 10px; text-align: center; background-color: silver; border-radius: 4px">Konseling Permasalahan</h1>
         <div class="card-body">
             <div class="row">
                 <div class="col-md-4">

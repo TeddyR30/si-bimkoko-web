@@ -13,9 +13,9 @@
                         <div class="col-8">
                             <div class="numbers">
                                 <div class="col-6"><i class="ti ti-layout-list"></i></div>
-                      <p class="text-sm mb-0 text-capitalize font-weight-bold"><h2 style="color:whitesmoke">Pengguna</h2></p>
-                      <h5 class="font-weight-bolder mb-0" style="color: yellow">
-                        {{$user_count}}
+                      <p class="text-sm mb-0 text-capitalize font-weight-bold"><h2>Bimbingan</h2></p>
+                      <h5 class="font-weight-bolder mb-0">
+                        0
                       </h5>
                     </div>
                   </div>
@@ -35,9 +35,9 @@
                   <div class="col-8">
                     <div class="numbers">
                         <div class="col-6"><i class="ti ti-layout-list"></i></div>
-                      <p class="text-sm mb-0 text-capitalize font-weight-bold"><h2 style="color:whitesmoke">Barang</h2></p>
-                      <h5 class="font-weight-bolder mb-0" style="color: yellow">
-                        {{$product_count}}
+                      <p class="text-sm mb-0 text-capitalize font-weight-bold"><h2>Konseling</h2></p>
+                      <h5 class="font-weight-bolder mb-0">
+                        0
                       </h5>
                     </div>
                   </div>
@@ -51,15 +51,14 @@
             </div>
           </div>
         <div class="col-xl-4 col-sm-6 mb-xl-0 mb-4">
-            <div class="card" style="background-color: #252f40">
+            <div class="card" style="background-color: #E4E5EA">
               <div class="card-body p-3">
                 <div class="row">
                   <div class="col-8">
                     <div class="numbers">
                         <div class="col-6"><i class="ti ti-layout-list"></i></div>
-                      <p class="text-sm mb-0 text-capitalize font-weight-bold"><h2 style="color:whitesmoke">Peminjaman</h2></p>
-                      <h5 class="font-weight-bolder mb-0" style="color: yellow">
-                        {{-- {{$peminjaman_count}} --}}
+                      <p class="text-sm mb-0 text-capitalize font-weight-bold"><h2>Konsultasi</h2></p>
+                      <h5 class="font-weight-bolder mb-0">
                         0
                       </h5>
                     </div>
@@ -76,4 +75,5 @@
     </div>
 
 </div>
+
 @endsection

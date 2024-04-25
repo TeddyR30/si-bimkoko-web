@@ -2,25 +2,25 @@
     <ul id="sidebarnav">
       <li class="nav-small-cap">
         <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-        <span class="hide-menu" style="margin-left: 25%">Master Data</span>
+        <span class="hide-menu" style="margin-left: 25%">Main Menu</span>
       </li>
       <li class="sidebar-item">
         @if (Auth::user()->role_id==1)
-            <a class="sidebar-link" href="{{ url('/superadmin/dashboard')}}" aria-expanded="false">
+            <a class="sidebar-link" href="{{ url('/admin/dashboard')}}" aria-expanded="false">
               <span>
                 <i class="ti ti-layout-dashboard"></i>
               </span>
               <span class="hide-menu">Dashboard</span>
             </a>
             @elseif (Auth::user()->role_id==2)
-                    <a class="sidebar-link" href="{{ url('/admin/dashboard')}}" aria-expanded="false" style="background-color: #252f40">
+                    <a class="sidebar-link" href="{{ url('/konselor/dashboard')}}" aria-expanded="false" style="background-color: #252f40">
                     <span>
                         <i class="ti ti-layout-dashboard"></i>
                     </span>
                     <span class="hide-menu">Dashboard</span>
                     </a>
             @elseif (Auth::user()->role_id==3)
-                    <a class="sidebar-link" href="{{ url('/mahasiswa/dashboard')}}" aria-expanded="false" style="background-color: #252f40">
+                    <a class="sidebar-link" href="{{ url('/konseli/dashboard')}}" aria-expanded="false" style="background-color: #252f40">
                     <span>
                         <i class="ti ti-layout-dashboard"></i>
                     </span>
@@ -31,25 +31,31 @@
                 <span>
                 <i class="ti ti-user"></i>
                 </span>
-                <span class="hide-menu">Pengguna</span>
+                <span class="hide-menu">Profile</span>
             </a>
-            <a class="sidebar-link" href="{{ url('/products')}}" aria-expanded="false" style="background-color: #252f40">
+            <a class="sidebar-link" href="{{ url('/posts')}}" aria-expanded="false" style="background-color: #252f40">
                 <span>
                 <i class="ti ti-layout-list"></i>
                 </span>
-                <span class="hide-menu">Barang</span>
+                <span class="hide-menu">Bimbingan</span>
             </a>
             <a class="sidebar-link" href="{{ url('/peminjaman/index')}}" aria-expanded="false" style="background-color: #252f40">
                 <span>
                 <i class="ti ti-cards"></i>
                 </span>
-                <span class="hide-menu">Peminjaman</span>
+                <span class="hide-menu">Konseling</span>
             </a>
             <a class="sidebar-link" href="{{ url('')}}" aria-expanded="false" style="background-color: #252f40">
                 <span>
                 <i class="ti ti-file-description"></i>
                 </span>
-                <span class="hide-menu">Pengembalian</span>
+                <span class="hide-menu">Konsultasi</span>
+            </a>
+            <a class="sidebar-link" href="{{ url('')}}" aria-expanded="false" style="background-color: #252f40">
+                <span>
+                <i class="ti ti-file-description"></i>
+                </span>
+                <span class="hide-menu">Riwayat</span>
             </a>
 
       </li>

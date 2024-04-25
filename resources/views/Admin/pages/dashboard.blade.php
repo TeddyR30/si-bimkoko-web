@@ -13,7 +13,7 @@
                         <div class="col-8">
                             <div class="numbers">
                                 <div class="col-6"><i class="ti ti-layout-list"></i></div>
-                      <p class="text-sm mb-0 text-capitalize font-weight-bold"><h2>Pengguna</h2></p>
+                      <p class="text-sm mb-0 text-capitalize font-weight-bold"><h2>Bimbingan</h2></p>
                       <h5 class="font-weight-bolder mb-0">
                         0
                       </h5>
@@ -35,7 +35,7 @@
                   <div class="col-8">
                     <div class="numbers">
                         <div class="col-6"><i class="ti ti-layout-list"></i></div>
-                      <p class="text-sm mb-0 text-capitalize font-weight-bold"><h2>Barang</h2></p>
+                      <p class="text-sm mb-0 text-capitalize font-weight-bold"><h2>Konseling</h2></p>
                       <h5 class="font-weight-bolder mb-0">
                         0
                       </h5>
@@ -57,7 +57,7 @@
                   <div class="col-8">
                     <div class="numbers">
                         <div class="col-6"><i class="ti ti-layout-list"></i></div>
-                      <p class="text-sm mb-0 text-capitalize font-weight-bold"><h2>Peminjaman</h2></p>
+                      <p class="text-sm mb-0 text-capitalize font-weight-bold"><h2>Konsultasi</h2></p>
                       <h5 class="font-weight-bolder mb-0">
                         0
                       </h5>
@@ -75,5 +75,4 @@
     </div>
 
 </div>
-
 @endsection

@@ -4,10 +4,11 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use App\Http\Middleware\OnlyKonseli;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
 
-class OnlyMahasiswa
+class OnlyKonseli
 {
     /**
      * Handle an incoming request.

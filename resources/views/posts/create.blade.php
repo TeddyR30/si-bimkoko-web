@@ -1,13 +1,13 @@
-@extends('products.layout')
+@extends('posts.layout')
 
 @section('content')
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
-            <h1 style="text-align: center; background-color: silver; border-radius: 10px">Manajemen Barang | Tambah</h1>
+            <h1 style="text-align: center; background-color: silver; border-radius: 10px">Bimbingan Karir | Tambah</h1>
         </div>
         <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('products.index') }}"> Back</a>
+            <a class="btn btn-primary" href="{{ route('posts.index') }}"> Back</a>
         </div>
     </div>
 </div>
@@ -23,7 +23,7 @@
     </div>
 @endif
 
-<form action="{{ route('products.store') }}" method="POST">
+<form action="{{ route('posts.store') }}" method="POST">
     @csrf
 
      <div class="row">

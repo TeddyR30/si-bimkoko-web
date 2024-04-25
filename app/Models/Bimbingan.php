@@ -2,11 +2,11 @@
 
 namespace App\Models;
 
-use App\Models\Barang;
+use App\Models\Bimbingan;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Barang extends Model
+class Bimbingan extends Model
 {
     use HasFactory;
 

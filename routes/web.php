@@ -4,8 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AppController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\BarangController;
-use App\Http\Controllers\ProductController;
+use App\Http\Controllers\BimbinganController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\PeminjamanController;
 
@@ -28,7 +28,7 @@ Route::middleware(['splade'])->group(function () {
     // Route::get('/', fn () => view('home'))->name('home');
     Route::get('/docs', fn () => view('docs'))->name('docs');
 
-    Route::resource('/barang', BarangController::class);
+    Route::resource('/bimbingan', BimbinganController::class);
 
     // Registers routes to support the interactive components...
     Route::spladeWithVueBridge();
@@ -50,9 +50,9 @@ Route::middleware('guest')->group(function () {
 });
 
 Route::middleware('auth')->group(function(){
-    Route::get('mahasiswa/dashboard', [AppController::class, 'mahasiswa']);
-    Route::get('admin/dashboard', [AppController::class, 'admin']);
-    Route::get('superadmin/dashboard', [AppController::class, 'superadmin']);
+    Route::get('konseli/dashboard', [AppController::class, 'konseli']);
+    Route::get('konselor/dashboard', [AppController::class, 'konselor']);
+    Route::get('admin/dashboard', [AppController::class, '']);
 
 });
 
@@ -62,7 +62,7 @@ Route::get('profile/profile', [UserController::class, 'profile']);
 
 Route::get('peminjaman/index', [PeminjamanController::class, 'index']);
 
-Route::resource('products', ProductController::class);
+Route::resource('posts', PostController::class);
 // Route::get('send-notif/{name}', function ($name) {
 //     event(new AppEventsSendGlobalNotification($name));
 //     return "Event has been sent!";

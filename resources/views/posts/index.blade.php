@@ -1,13 +1,13 @@
-@extends('products.layout')
+@extends('posts.layout')
 
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h1 style="text-align: center; background-color: silver; border-radius: 10px">Manajemen Barang</h1>
+                <h1 style="text-align: center; background-color: silver; border-radius: 10px">Bimbingan Karir</h1>
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('products.create') }}"> Create New Product</a>
+                <a class="btn btn-success" href="{{ route('posts.create') }}"> Create New Post</a>
             </div>
         </div>
     </div>
@@ -25,17 +25,17 @@
             <th>Details</th>
             <th width="280px">Action</th>
         </tr>
-        @foreach ($products as $product)
+        @foreach ($posts as $post)
         <tr>
             <td>{{ ++$i }}</td>
-            <td>{{ $product->name }}</td>
-            <td>{{ $product->detail }}</td>
+            <td>{{ $post->name }}</td>
+            <td>{{ $post->detail }}</td>
             <td>
-                <form action="{{ route('products.destroy',$product->id) }}" method="POST">
+                <form action="{{ route('posts.destroy',$post->id) }}" method="POST">
 
-                    <a class="btn btn-info" href="{{ route('products.show',$product->id) }}">Show</a>
+                    <a class="btn btn-info" href="{{ route('posts.show',$post->id) }}">Show</a>
 
-                    <a class="btn btn-primary" href="{{ route('products.edit',$product->id) }}">Edit</a>
+                    <a class="btn btn-primary" href="{{ route('posts.edit',$post->id) }}">Edit</a>
 
                     @csrf
                     @method('DELETE')
@@ -47,6 +47,6 @@
         @endforeach
     </table>
 
-    {!! $products->links() !!}
+    {!! $posts->links() !!}
 
 @endsection

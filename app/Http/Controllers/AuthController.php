@@ -36,11 +36,11 @@ class AuthController extends Controller
             $request->session()->regenerate();
 
             if ($user->role_id==1) {
-                return redirect('superadmin/dashboard');
-            } elseif ($user->role_id==2) {
                 return redirect('admin/dashboard');
+            } elseif ($user->role_id==2) {
+                return redirect('konselor/dashboard');
             } elseif ($user->role_id==3) {
-                return redirect('mahasiswa/dashboard');
+                return redirect('konseli/dashboard');
             }
         } else {
             return back();
