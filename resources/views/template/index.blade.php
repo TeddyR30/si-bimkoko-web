@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SI-BIMKOKO</title>
-  <link rel="shortcut icon" type="image/png" href="{{url('/assets')}}/images/logos/POLINDRA.png" />
+  <link rel="shortcut icon" type="image/png" href="{{url('/assets')}}/images/logos/apple-icon.png" />
   <link rel="stylesheet" href="{{url('/assets')}}/css/styles.min.css" />
 </head>
 
@@ -16,10 +16,10 @@
     <!-- Sidebar Start -->
     <aside class="left-sidebar">
       <!-- Sidebar scroll-->
-      <div style="background-color: #6b99c3">
+      <div class="border-radius:30%" style="background-color: #434343">
         <div class="brand-logo d-flex align-items-center justify-content-between">
           <a href="./index.html" class="text-nowrap logo-img">
-            <img src="{{url('/assets')}}/images/logos/POLINDRA.png" width="140" alt="" style="margin-left: 25%; margin-top: 30px"/>
+            <img src="{{url('/assets')}}/images/logos/apple-icon.png" width="140" alt="" style="margin-left: 25%; margin-top: 30px"/>
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>

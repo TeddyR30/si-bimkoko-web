@@ -1,4 +1,4 @@
-<nav class="sidebar-nav scroll-sidebar" data-simplebar="" style="background-color:#6b99c3">
+<nav class="sidebar-nav scroll-sidebar" style="background-color:#434343">
     <ul id="sidebarnav">
       <li class="nav-small-cap">
         <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
@@ -153,4 +153,5 @@
         </div>
       </div>
     </div> --}}
+
   </nav>

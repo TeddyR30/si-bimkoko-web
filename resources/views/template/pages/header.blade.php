@@ -1,4 +1,4 @@
-<header class="app-header" style="background-color: #6B99C3">
+<header class="app-header" style="background-color: #434343">
     <nav class="navbar navbar-expand-lg navbar-light">
       <ul class="navbar-nav">
         <li class="nav-item d-block d-xl-none">
@@ -47,4 +47,12 @@
         </ul>
       </div>
     </nav>
+    <style>
+        .hov:hover{
+            background: radial-gradient(#3DA3C3 0%, rgba(47, 136, 255, 0.12) 90%, rgba(47, 136, 255, 0.12) 100%);
+            border-radius: 5px;
+            width: 86%;
+            height: 200%;
+        }
+      </style>
   </header>
