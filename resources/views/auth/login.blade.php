@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Login</title>
-  <link rel="shortcut icon" type="image/png" href="{{ ('assets') }}/images/logos/POLINDRA.png" />
+  <link rel="shortcut icon" type="image/png" href="{{ ('assets') }}/images/logos/apple-icon.png" />
   <link rel="stylesheet" href="{{ ('assets') }}/css/styles.min.css" />
 </head>
 
@@ -21,7 +21,7 @@
             <div class="card mb-0">
               <div class="card-body">
                 <a href="" class="text-nowrap logo-img text-center d-block py-3 w-100">
-                  <img src="{{ ('assets') }}/images/logos/POLINDRA.png" width="180" alt="">
+                  <img src="{{ ('assets') }}/images/logos/apple-icon.png" width="180" alt="">
                 </a>
                     <h1 class="text-center">SI-BIMKOKO</h1>
                 <form method="post" action="{{ route('process') }}">

@@ -5,7 +5,7 @@
         {{-- Header and search bar --}}
         <div class="m-header">
             <nav>
-                <a href="{{ url('/Chat') }}"><i class="fas fa-inbox"></i> <span class="messenger-headTitle">SISLAB | MESSAGING</span> </a>
+                <a href="{{ url('/Chat') }}"><i class="fas fa-inbox"></i> <span class="messenger-headTitle">SI-BIMKOKO | MESSAGING</span> </a>
                 {{-- header buttons --}}
                 <nav class="m-header-right">
                     <a href="#"><i class="fas fa-cog settings-btn"></i></a>
@@ -14,17 +14,17 @@
             </nav>
             {{-- Search input --}}
             <input type="text" class="messenger-search" placeholder="Search" />
-            {{-- Tabs --}}
-            {{-- <div class="messenger-listView-tabs">
-                <a href="#" class="active-tab" data-view="users">
-                    <span class="far fa-user"></span> Contacts</a>
-            </div> --}}
         </div>
         {{-- tabs and lists --}}
         <div class="m-body contacts-container">
            {{-- Lists [Users/Group] --}}
            {{-- ---------------- [ User Tab ] ---------------- --}}
            <div class="show messenger-tab users-tab app-scroll" data-view="users">
+                {{-- Tabs --}}
+                <div class="messenger-listView-tabs">
+                    <a href="#" class="active-tab" data-view="users">
+                        <span class="far fa-user"></span> Contacts</a>
+                </div>``
                {{-- Favorites --}}
                <div class="favorites-section">
                 <p class="messenger-title"><span>Favorites</span></p>
