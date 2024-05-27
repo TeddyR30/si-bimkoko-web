@@ -27,7 +27,7 @@
                     <span class="hide-menu">Dashboard</span>
                     </a>
         @endif
-            <a class="sidebar-link" href="{{ url('/profile/profile')}}" aria-expanded="false" style="background-color: #252f40">
+            <a class="sidebar-link" href="{{ url('/profile')}}" aria-expanded="false" style="background-color: #252f40">
                 <span>
                 <i class="ti ti-user"></i>
                 </span>

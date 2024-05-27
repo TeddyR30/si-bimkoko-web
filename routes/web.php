@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AppController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
@@ -80,3 +81,6 @@ Route::post('konsultasi/appointment_konsultasis', [AppointmentKonsultasiControll
 Route::get('konsultasi/appointment_konsultasis', [AppointmentKonsultasiController::class, 'index'])->name('appointment_konsultasis.index');
 
 Route::get('activity_logs', [ActivityLogController::class, 'index']);
+
+Route::get('profile/', [ProfileController::class,'show']);
+

@@ -1,7 +1,7 @@
 @extends('template.index')
 @section('content')
   <div class="container">
-    <h2>Schedule an Appointment</h2>
+    <h2>Schedule an Appointment Counsultation</h2>
     <form action="{{ route('appointment_konsultasis.store') }}" method="POST">
         @csrf
         <div class="form-group">

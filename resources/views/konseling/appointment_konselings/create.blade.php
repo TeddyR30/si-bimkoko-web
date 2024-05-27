@@ -105,7 +105,7 @@
     </div>
   </div> --}}
   <div class="container">
-    <h2>Schedule an Appointment</h2>
+    <h2>Schedule an Appointment Counseling</h2>
     <form action="{{ route('appointment_konselings.store') }}" method="POST">
         @csrf
         <div class="form-group">
