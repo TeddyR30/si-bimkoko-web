@@ -39,19 +39,19 @@
                 </span>
                 <span class="hide-menu">Bimbingan</span>
             </a>
-            <a class="sidebar-link" href="{{ url('/peminjaman/index')}}" aria-expanded="false" style="background-color: #252f40">
+            <a class="sidebar-link" href="{{ url('/konseling/appointment_konselings/create')}}" aria-expanded="false" style="background-color: #252f40">
                 <span>
                 <i class="ti ti-cards"></i>
                 </span>
                 <span class="hide-menu">Konseling</span>
             </a>
-            <a class="sidebar-link" href="{{ url('')}}" aria-expanded="false" style="background-color: #252f40">
+            <a class="sidebar-link" href="{{ url('/konsultasi/appointment_konsultasis/create')}}" aria-expanded="false" style="background-color: #252f40">
                 <span>
                 <i class="ti ti-file-description"></i>
                 </span>
                 <span class="hide-menu">Konsultasi</span>
             </a>
-            <a class="sidebar-link" href="{{ url('')}}" aria-expanded="false" style="background-color: #252f40">
+            <a class="sidebar-link" href="{{ url('/activity_logs')}}" aria-expanded="false" style="background-color: #252f40">
                 <span>
                 <i class="ti ti-file-description"></i>
                 </span>

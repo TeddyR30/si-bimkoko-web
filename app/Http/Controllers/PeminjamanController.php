@@ -9,6 +9,6 @@ class PeminjamanController extends Controller
 {
     public function index() {
 
-        return view('peminjaman.index');
+        // return view('peminjaman.index');
     }
 }

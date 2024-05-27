@@ -3,11 +3,14 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AppController;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\BimbinganController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\BimbinganController;
 use App\Http\Controllers\PeminjamanController;
+use App\Http\Controllers\ActivityLogController;
+use App\Http\Controllers\AppointmentKonselingController;
+use App\Http\Controllers\AppointmentKonsultasiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -67,3 +70,13 @@ Route::resource('posts', PostController::class);
 //     event(new AppEventsSendGlobalNotification($name));
 //     return "Event has been sent!";
 // });
+
+Route::get('konseling/appointment_konselings/create', [AppointmentKonselingController::class, 'create'])->name('appointment_konselings.create');
+Route::post('konseling/appointment_konselings', [AppointmentKonselingController::class, 'store'])->name('appointment_konselings.store');
+Route::get('konseling/appointment_konselings', [AppointmentKonselingController::class, 'index'])->name('appointment_konselings.index');
+
+Route::get('konsultasi/appointment_konsultasis/create', [AppointmentKonsultasiController::class, 'create'])->name('appointment_konsultasis.create');
+Route::post('konsultasi/appointment_konsultasis', [AppointmentKonsultasiController::class, 'store'])->name('appointment_konsultasis.store');
+Route::get('konsultasi/appointment_konsultasis', [AppointmentKonsultasiController::class, 'index'])->name('appointment_konsultasis.index');
+
+Route::get('activity_logs', [ActivityLogController::class, 'index']);
