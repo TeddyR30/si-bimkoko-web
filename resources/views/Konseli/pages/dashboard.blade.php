@@ -121,7 +121,27 @@
             </div>
           </div>
     </div>
-    <h4 style="text-align: center; margin: 20px">Alur Penggunaan Fitur</h4>
+    <h4 style="text-align: center; margin: 40px">Fitur Kami : </h4>
+    <div class="chalkboard">
+        <div class="card-menu">
+            <div class="cards">
+                <img src="{{url('/assets')}}/images/backgrounds/IKON copy 2.png" width="140" style="margin-top: 30px" alt="Image 1">
+                <h3>Bimbingan Karir</h3>
+                <a href="{{ url('/posts')}}"></a>
+            </div>
+            <div class="cards">
+                <img src="{{url('/assets')}}/images/backgrounds/IKON copy 3.png" width="140" style="margin-top: 30px" alt="Image 2">
+                <h3>Konseling Permasalahan</h3>
+                <a href="{{ url('/konseling/appointment_konselings/create')}}"></a>
+            </div>
+            <div class="cards">
+                <img src="{{url('/assets')}}/images/backgrounds/IKON copy 4.png" width="140" style="margin-top: 30px" alt="Image 3">
+                <h3>Konsultasi Individu</h3>
+                <a href="{{ url('/konsultasi/appointment_konsultasis/create')}}"></a>
+            </div>
+        </div>
+    </div>
+    <h4 style="text-align: center; margin: 40px">Alur Penggunaan Fitur</h4>
     <div class="chalkboard">
         <div class="card-menu">
             <div class="cards">
