@@ -7,9 +7,10 @@
   <title>SI-BIMKOKO</title>
   <link rel="shortcut icon" type="image/png" href="{{url('/assets')}}/images/logos/apple-icon.png" />
   <link rel="stylesheet" href="{{url('/assets')}}/css/styles.min.css" />
+
 </head>
 
-<body style="background-color: #a3a3a3">
+<body style="background-color: #C3D7E2">
   <!--  Body Wrapper -->
   <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
     data-sidebar-position="fixed" data-header-position="fixed">

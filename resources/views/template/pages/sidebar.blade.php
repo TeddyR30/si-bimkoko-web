@@ -53,7 +53,7 @@
             </a>
             <a class="sidebar-link" href="{{ url('/activity_logs')}}" aria-expanded="false" style="background-color: #252f40">
                 <span>
-                <i class="ti ti-file-description"></i>
+                <i class="ti ti-history"></i>
                 </span>
                 <span class="hide-menu">Riwayat</span>
             </a>

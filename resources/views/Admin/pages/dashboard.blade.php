@@ -73,6 +73,24 @@
             </div>
           </div>
     </div>
-
+    <div class="chalkboard">
+        <div class="card-menu">
+            <div class="card">
+                <img src="public/images/image1.jpg" alt="Image 1">
+                <h3>Menu 1</h3>
+                <p>Description of menu 1</p>
+            </div>
+            <div class="card">
+                <img src="public/images/image2.jpg" alt="Image 2">
+                <h3>Menu 2</h3>
+                <p>Description of menu 2</p>
+            </div>
+            <div class="card">
+                <img src="public/images/image3.jpg" alt="Image 3">
+                <h3>Menu 3</h3>
+                <p>Description of menu 3</p>
+            </div>
+        </div>
+    </div>
 </div>
 @endsection
