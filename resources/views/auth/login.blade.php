@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Login</title>
+  <title>Sign In</title>
   <link rel="shortcut icon" type="image/png" href="{{ asset('assets/images/logos/apple-icon.png') }}" />
   <link rel="stylesheet" href="{{ asset('assets/css/styles.min.css') }}" />
   <style>
@@ -102,25 +102,30 @@
     <!-- Left Section -->
     <div class="left-section">
       <img src="{{ asset('assets/images/logos/apple-icon.png') }}" width="80" alt="">
-      <h2>SELAMAT DATANG DI SI-BIMKOKO</h2>
+      <h2>SELAMAT DATANG</h2>
+      <h2> DI </h2>
+      <h2>SI-BIMKOKO</h2>
       <p>© 2023 Powered by BK SMANSKA SMAN 1 SUKAGUMIWANG.</p>
     </div>
     <!-- Right Section -->
     <div class="right-section">
-      <h2>Login</h2>
-      <form method="post" action="{{ route('process') }}">
-        @csrf
-        <input type="text" class="form-control" id="email" name="email" placeholder="masukan username/id">
-        <input type="password" class="form-control" id="password" name="password" placeholder="masukan password">
-        <button type="submit" class="btn btn-primary">Login</button>
-        <a class="text-primary" href="">Lupa Password?</a>
-        <div class="footer-links">
-          <p>Belum Punya Akun?</p>
-          <a class="text-primary" href="{{ url('/register') }}">Registrasi disini</a>
-        </div>
-      </form>
-    </div>
-  </div>
+        <h3>Sign In</h3>
+        <form method="post" action="{{ route('process') }}">
+          @csrf
+          <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Input Your Email Here">
+          </div>
+          <div class="mb-4">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" name="password" aria-describedby="passwordHelp" placeholder="Input Your Password Here">
+          </div>
+          <button type="submit" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Sign In</button>
+          <div class="d-flex align-items-center justify-content-center">
+              <p class="fs-4 mb-0 fw-bold">Don't have an Account?</p>
+              <a class="text-primary fw-bold ms-2" href="{{ url('/register') }}">Sign Up</a>
+          </div>
+      </div>
   <script src="{{ asset('assets/libs/jquery/dist/jquery.min.js') }}"></script>
   <script src="{{ asset('assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
 </body>
