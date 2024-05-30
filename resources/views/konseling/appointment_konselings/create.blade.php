@@ -125,6 +125,7 @@
             <textarea class="form-control" id="notes" name="notes"></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-primary">Cancel</button>
     </form>
 </div>
   @endsection
