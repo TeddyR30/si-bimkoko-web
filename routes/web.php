@@ -64,6 +64,11 @@ Route::get('/logout', [AuthController::class ,'logout']);
 
 Route::get('profile/profile', [UserController::class, 'profile']);
 
+Route::get('/profile', [ProfileController::class, 'show'])->name('profile.show');
+Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
+Route::put('/profile', [ProfileController::class, 'update'])->name('profile.update');
+
+
 Route::get('peminjaman/index', [PeminjamanController::class, 'index']);
 
 Route::resource('posts', PostController::class);
