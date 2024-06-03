@@ -11,7 +11,7 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row mb-2 mt-2">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Name:</strong>
@@ -22,6 +22,12 @@
             <div class="form-group">
                 <strong>Details:</strong>
                 {{ $post->detail }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Click the button below to join :</strong>
+                <a class="btn btn-outline-success btn-light btn-lg mt-2" href="{{ url('/Chat', $post->id) }}">Join</a>
             </div>
         </div>
     </div>

@@ -7,7 +7,7 @@
                 <h1 style="text-align: center; background-color: silver; border-radius: 10px">Bimbingan Karir</h1>
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('posts.create') }}"> Create New Post</a>
+                <a class="btn btn-success mb-2" href="{{ route('posts.create') }}"> Create New Post</a>
             </div>
         </div>
     </div>
@@ -19,9 +19,9 @@
     @endif
 
     <table class="table table-bordered">
-        <tr>
-            <th>No</th>
-            <th>Name</th>
+        <tr class="text-center">
+            <th width="10%">No</th>
+            <th>Title</th>
             <th>Details</th>
             <th width="280px">Action</th>
         </tr>

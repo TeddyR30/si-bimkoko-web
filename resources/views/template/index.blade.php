@@ -17,9 +17,9 @@
     <!-- Sidebar Start -->
     <aside class="left-sidebar">
       <!-- Sidebar scroll-->
-      <div class="border-radius:30%" style="background-color: #434343">
+      <div class="border-radius: 30%" style="background-color: #434343">
         <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a href="./index.html" class="text-nowrap logo-img">
+          <a href="" class="text-nowrap logo-img">
             <img src="{{url('/assets')}}/images/logos/apple-icon.png" width="140" alt="" style="margin-left: 25%; margin-top: 30px"/>
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
