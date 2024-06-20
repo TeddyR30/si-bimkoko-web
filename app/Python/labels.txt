@@ -1,0 +1,3 @@
+0 Senang
+1 Sedih
+2 marah
